@@ -12,18 +12,25 @@ const images = [
     alt: 'Group of Horses Running',
   },
   {
-    url:
-      'https://images.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    url: 'https://images.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     alt: 'Elephant Beside on Baby Elephant',
   },
   {
-    url:
-      'https://images.pexels.com/photos/37833/rainbow-lorikeet-parrots-australia-rainbow-37833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    url: 'https://images.pexels.com/photos/37833/rainbow-lorikeet-parrots-australia-rainbow-37833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     alt: 'Blue Geeen and Orange Parrot',
   },
   {
-    url:
-      'https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    url: 'https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     alt: 'Zebras on Zebra',
   },
 ];
+
+const galleryList = document.querySelector('ul.gallery');
+
+for (const image of images) {
+  let appendedElement = document.createElement('img');
+  appendedElement.src = image.url;
+  appendedElement.alt = image.alt;
+  galleryList.append(appendedElement);
+  // galleryList.insertAdjacentHTML('beforeend',`<img src=${image.url} alt=${image.alt} />`);
+}
