@@ -72,11 +72,21 @@ body {
   border: 1px solid #808080;
   color: #2e2f42;
   font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.64px;
   padding: 8px;
   padding-left: 16px;
+}
+#name-input {
+  margin-bottom: 8px;
+  color: #2e2f42;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  padding: 8px;
+  padding-left: 16px;
+  width: 360px;
+  height: 40px;
 }
