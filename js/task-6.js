@@ -27,6 +27,8 @@ function createBoxes() {
       boxes.append(newBox);
     }
   }
+  numberInput.value = 0;
+  boxAmount = 0;
 }
 destroyBtn.addEventListener('click', destroyBoxes);
 function destroyBoxes() {
@@ -34,4 +36,5 @@ function destroyBoxes() {
   for (const box of boxesList) {
     box.remove();
   }
+  boxAmount = 0;
 }
