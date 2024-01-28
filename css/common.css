@@ -132,3 +132,10 @@ body {
 .form-submit:hover {
   background-color: #6c8cff;
 }
+.widget-text {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
