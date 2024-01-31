@@ -2,7 +2,7 @@ const colorButton = document.querySelector('button.change-color');
 const spanColor = document.querySelector('span.color');
 
 const changeColor = () => {
-  let randomizedColor = getRandomHexColor();
+  const randomizedColor = getRandomHexColor();
   document.body.style.backgroundColor = randomizedColor;
   spanColor.textContent = randomizedColor;
 };
