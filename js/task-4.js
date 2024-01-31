@@ -6,11 +6,13 @@ function formSubmit(e) {
   e.preventDefault();
   let outputObject = {};
   for (const input of inputsList) {
-    let prop = input.type;
+    // input.name вместо input.type
+    let prop = input.name;
     if (input.value.length === 0) {
       return alert('All form fields must be filled in');
     }
-    outputObject[prop] = input.value;
+    // Добавил обрезку
+    outputObject[prop] = input.value.trim();
   }
   console.log(outputObject);
   form.reset();
