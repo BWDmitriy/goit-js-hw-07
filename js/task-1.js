@@ -5,6 +5,6 @@ const categories = document.querySelectorAll('li.item');
 categories.forEach(item => {
   let categoryName = item.querySelector('h2');
   let categoryElementsCount = item.querySelectorAll('li').length;
-  console.log('Category: ' + categoryName.textContent);
-  console.log('Elements: ' + categoryElementsCount);
+  console.log(`Category: ${categoryName.textContent}`);
+  console.log(`Elements: ${categoryElementsCount}`);
 });
